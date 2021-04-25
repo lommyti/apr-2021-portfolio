@@ -1,0 +1,289 @@
+.name-highlight {
+  display: inline-block;
+  font-family: "Sohne Breit Bold", sans-serif;
+  font-size: 2.25rem;
+  overflow: visible;
+  margin-right: 12px;
+  transition: 0.4s ease-in-out;
+}
+
+.name-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding-right: 11px;
+  padding-left: 10px;
+  border-radius: 8px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.name-highlight:hover .name-box {
+  background-image: url("../images/gradient-small.png");
+  background-size: 100% 100%;
+  box-shadow: 4px 4px 12px rgba(255, 255, 255, 0.14);
+}
+
+.name-highlight a {
+  line-height: 64px;
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+  color: #fff;
+  -webkit-background-clip: text;
+  transition: 0.1s ease-in-out;
+}
+
+.name-highlight a:hover {
+  color: #fff;
+}
+
+.name-img {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  margin-top: 4px;
+}
+
+.intro {
+  font-family: "Sohne Breit", sans-serif;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  width: 70%;
+  position: fixed;
+  margin: 0 auto;
+  top: 35%;
+  left: 12.5%;
+}
+
+.sheet-header {
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  cursor: grab;
+  position: sticky;
+  top: 0;
+  z-index: 9999999999;
+}
+
+.sheet {
+  color: #122228;
+  z-index: 99;
+  background: #fff;
+  position: absolute;
+  height: calc(100% - 85px);
+  width: 95%;
+  left: 2.5%;
+  margin-top: 630px;
+  overflow-y: hidden;
+  border-radius: 32px 32px 0px 0px;
+  font-family: "Sohne Breit Bold", sans-serif;
+  transition: 0.85s ease-in-out;
+  box-shadow: 10px -10px 90px rgba(0, 0, 0, 0.6);
+  padding-bottom: 10rem;
+}
+
+.showChildDiv {
+  margin-top: 84px;
+  overflow-y: scroll;
+  cursor: default;
+  width: 100%;
+  left: 0;
+}
+
+.sheet-body {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 36px 1.45rem;
+}
+
+.pull-tab {
+  width: 6.25%;
+  height: 6px;
+  border-radius: 8px;
+  background: #122228;
+  margin: 0 auto;
+  top: 0;
+  position: sticky;
+}
+
+.sheet h3 {
+  font-family: "Sohne Breit Bold", sans-serif;
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.recentcase h4 {
+  font-family: "Sohne Breit Bold", sans-serif;
+  font-size: 1.75rem;
+  color: #122228;
+  padding-bottom: 0;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.recentcase {
+  font-family: "Greycliff Medium", sans-serif;
+  color: #526971;
+  padding-bottom: 5rem;
+  font-size: 0.9em;
+  line-height: 165%;
+}
+
+.button a {
+  font-family: "Greycliff DemiBold", sans-serif;
+  background: #122228;
+  padding: 8px 16px;
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  line-height: 1.2rem;
+  transition: 0s ease-in-out;
+}
+
+.button a:hover {
+  background-image: url("../images/gradient-small.png");
+  background-size: 100% 100%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.button img {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: top;
+  width: 16px;
+  padding-top: 1.5px;
+  margin-right: 0.25rem;
+  position: static;
+  pointer-events: none;
+}
+
+.recentcase-text {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 12.5%;
+}
+
+.time {
+  font-size: 0.75rem;
+  letter-spacing: -0.01rem;
+  text-transform: uppercase;
+  font-family: "DM Mono", monospace !important;
+  opacity: 0.6;
+}
+
+.recentcase-hero {
+  display: inline-block;
+  width: 60%;
+  margin-left: 6%;
+  position: relative;
+  border-radius: 19px;
+  transition: 0.5s ease;
+}
+
+.recentcase-hero:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.14);
+}
+
+.recentcase-hero .bg {
+  width: 100%;
+}
+
+.recentcase-hero .gif {
+  width: 40%;
+  position: absolute;
+  height: 555px;
+  background-size: cover;
+  top: 0;
+  left: 12.5%;
+  pointer-events: none;
+}
+
+.recentcase-hero .gif2 {
+  width: 40%;
+  position: absolute;
+  height: 555px;
+  background-size: cover;
+  top: 0;
+  left: 12.5%;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.recentcase-hero .indicator {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  margin-top: -3rem;
+  right: 0.8rem;
+  padding: 0;
+}
+
+.recentcase-hero:hover .indicator {
+  animation: spin 2s linear infinite;
+}
+
+.recentcase-hero .frame img {
+  width: 46%;
+  position: absolute;
+  background-size: cover;
+  top: -34px;
+  left: 9.5%;
+  pointer-events: none;
+}
+
+.hero-inside-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  text-align: right;
+  list-style-type: none; /* Remove bullets */
+}
+
+.header a {
+  margin-right: 25px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background-image: url("../images/gradient-small.png");
+  background-size: 300% 100%;
+  color: #fff;
+  background-position: 0% 0%;
+
+  -webkit-background-clip: text;
+  overflow: visible;
+}
+
+.header a:nth-child(1) {
+  background-position: 300% 0%;
+}
+
+.header a:nth-child(2) {
+  background-position: 200% 0%;
+}
+
+.header a:nth-child(3) {
+  background-position: 100% 0%;
+}
+
+.header a:hover {
+  color: transparent;
+}

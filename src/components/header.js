@@ -5,29 +5,45 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
-    <div
+    <li
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        width: "100%",
         padding: `1.45rem 1.0875rem`,
+        position: "fixed",
+        top: 0,
+        zIndex: "99",
       }}
+      className="header"
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+      <Link
+        to="/"
+        style={{
+          textDecoration: `none`,
+        }}
+      >
+        HOME
+      </Link>
+      <Link
+        to="/"
+        style={{
+          textDecoration: `none`,
+        }}
+      >
+        ABOUT
+      </Link>
+      <Link
+        to="/"
+        style={{
+          textDecoration: `none`,
+        }}
+      >
+        RESUME
+      </Link>
+    </li>
   </header>
 )
 
